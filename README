@@ -11,6 +11,13 @@ Ensemble : vérification du projet, de son fonctoinnement, cohérence du code.
 2. Concepts vu en cours :
 
     a. Clean Code
+ - Code facile à lire ;
+ - Noms de variables, fonctions sont explicites ;
+ - Chaque fonction fait une seule chose (décrite par le nom de celle-ci) ;
+ - Chqaue fonction a deux paramètres maximum ;
+ - Pas de code inutilisé ;
+ - Pas de code répété.
+
     b. Functional Programming Style
     c. TDD
     d. Design Pattern
