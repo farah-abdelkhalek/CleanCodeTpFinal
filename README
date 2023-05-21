@@ -4,7 +4,7 @@ TP Final - Clean Code
 
 Farah : création des classes BillingTest, Products, TaxCalculation et TaxSystem ;
 
-Kathleen : création des classes Receipt, ReceiptCreation et ReceiptDisplay ;
+Kathleen : création des classes Receipt, ReceiptGenerator et ReceiptDisplayer ;
 
 Ensemble : vérification du projet, de son fonctoinnement, cohérence du code.
 
@@ -19,5 +19,6 @@ Ensemble : vérification du projet, de son fonctoinnement, cohérence du code.
  - Pas de code répété.
 
     b. Functional Programming Style
+
     c. TDD
     d. Design Pattern
