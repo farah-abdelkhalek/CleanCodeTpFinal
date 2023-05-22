@@ -7,7 +7,7 @@ public class ReceiptDisplayer {
         System.out.println("----- Receipt -----");
         displayProductList(receipt.getProductCountMap());
         System.out.println();
-        displayTotal("Total Price (Without Tax):", ²receipt.getTotalPriceWithoutTax());
+        displayTotal("Total Price (Without Tax):", receipt.getTotalPriceWithoutTax());
         displayTotal("Total Tax:", receipt.getTotalTax());
         displayTotal("Total Price (With Tax):", receipt.getTotalPriceWithTax());
         System.out.println();
