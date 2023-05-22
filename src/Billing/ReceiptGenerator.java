@@ -5,6 +5,7 @@ import java.math.RoundingMode;
 import java.util.List;
 
 public class ReceiptGenerator {
+
     public static Receipt generateReceipt(List<Products> productList) {
         double totalTax = calculateTotalTax(productList);
         double totalPriceWithTax = calculateTotalPriceWithTax(productList, totalTax);
@@ -40,7 +41,6 @@ public class ReceiptGenerator {
         BigDecimal roundedAmount = new BigDecimal(taxAmount).setScale(2, RoundingMode.UP);
         double roundedTaxAmount = roundedAmount.doubleValue();
 
-        // Round up to the nearest 0.05€
         double remainder = roundedTaxAmount % 0.05;
         if (remainder > 0) {
             roundedTaxAmount += (0.05 - remainder);
