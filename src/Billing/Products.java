@@ -29,5 +29,7 @@ public class Products {
     public boolean isImported() {
         return importStatus;
     }
+
+    public double getTaxAmount() { return getTaxAmount();}
 }
 
