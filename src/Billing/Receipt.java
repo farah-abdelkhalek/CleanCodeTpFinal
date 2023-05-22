@@ -42,4 +42,7 @@ public class Receipt {
     public double getTotalPriceWithTax() {
         return totalPriceWithTax;
     }
+
+    public void getTotalPriceWithoutTax() {
+    }
 }
