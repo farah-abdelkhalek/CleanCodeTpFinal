@@ -1,4 +1,7 @@
-package Billing;
+package Test;
+
+import Billing.Products;
+import Billing.TaxSystem;
 
 public class TaxSystemTest {
     public static void main(String[] args) {

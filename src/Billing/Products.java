@@ -31,5 +31,6 @@ public class Products {
     }
 
     public double getTaxAmount() { return getTaxAmount();}
+    //à rajouter autre part
 }
 

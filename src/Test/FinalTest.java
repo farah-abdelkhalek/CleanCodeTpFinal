@@ -1,4 +1,9 @@
-package Billing;
+package Test;
+
+import Billing.Products;
+import Billing.Receipt;
+import Billing.ReceiptDisplayer;
+import Billing.ReceiptGenerator;
 
 import java.util.ArrayList;
 import java.util.List;

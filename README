@@ -2,7 +2,7 @@ TP Final - Clean Code
 
 1. Répartition du travail
 
-Farah : création des classes BillingTest, Products, TaxCalculation et TaxSystem ;
+Farah : création des classes FinalTest, Products, TaxCalculation et TaxSystem ;
 
 Kathleen : création des classes Receipt, ReceiptGenerator et ReceiptDisplayer ;
 
@@ -19,6 +19,10 @@ Ensemble : vérification du projet, de son fonctionnement, cohérence du code.
  - Pas de code répété.
 
     b. Functional Programming Style
+ - Pas de Functional Programing Style sinon il apparaîtrait sous forme de stream au lieu des boucles for
+   présentes dans le code (qui ne devraient pas y être),
 
     c. TDD
+
+
     d. Design Pattern
