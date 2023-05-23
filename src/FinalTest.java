@@ -1,5 +1,3 @@
-package Billing;
-
 import Billing.Products;
 import Billing.Receipt;
 import Billing.ReceiptDisplayer;

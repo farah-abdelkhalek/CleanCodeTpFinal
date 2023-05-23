@@ -4,9 +4,10 @@ import java.util.Map;
 
 public class ReceiptDisplayer {
     public static void displayReceipt(Receipt receipt) {
-        System.out.println("----- Receipt -----");
+        System.out.println("----- Receipt -----\n");
         displayProductList(receipt.getProductCountMap());
-        System.out.println();
+        System.out.println("\nTotal Price (Without Tax):"+ receipt.getTotalPriceWithoutTax());
+        System.out.println("\nTotal Price (With Tax):" + receipt.getTotalPriceWithTax());
         displayTotal("Total Price (Without Tax):", receipt.getTotalPriceWithoutTax());
         displayTotal("Total Tax:", receipt.getTotalTax());
         displayTotal("Total Price (With Tax):", receipt.getTotalPriceWithTax());
@@ -24,7 +25,7 @@ public class ReceiptDisplayer {
         }
     }
 
-    private static void displayTotal(String label, double amount) {
+    static void displayTotal(String label, double amount) {
         System.out.println(label);
         System.out.println(String.format("%.2f€", amount));
     }

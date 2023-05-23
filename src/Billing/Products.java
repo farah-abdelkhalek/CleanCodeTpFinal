@@ -30,7 +30,9 @@ public class Products {
         return importStatus;
     }
 
-//    public double getTaxAmount() { return getTaxAmount();}
-    //à rajouter autre part
+
+    public double getTaxAmount() { return getTaxAmount();}
+
+
 }
 

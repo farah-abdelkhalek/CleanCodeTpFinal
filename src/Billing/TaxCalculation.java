@@ -18,7 +18,7 @@ public class TaxCalculation {
          return totalTaxAmount;
      }
 
-     private double getTaxAmount(Products product) {
+     public double getTaxAmount(Products product) {
          double taxAmount = 0;
 
          if (!isTaxExempt(product)) {
@@ -29,12 +29,12 @@ public class TaxCalculation {
          return taxAmount;
      }
 
-     private boolean isTaxExempt(Products product) {
+     boolean isTaxExempt(Products product) {
          String category = product.getCategory();
          return category.equals(FOOD) || category.equals(MEDICINE) || category.equals(BOOK);
      }
 
-     private TaxSystem getTaxSystem(Products product) {
+     TaxSystem getTaxSystem(Products product) {
          if (product.getIsImported()) {
              return TaxSystem.IMPORTED_TAX;
          } else {

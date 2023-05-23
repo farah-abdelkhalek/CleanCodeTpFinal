@@ -15,7 +15,7 @@ public class ReceiptGenerator {
         return new Receipt(productList, totalTax, totalPriceWithTax);
     }
 
-    private static double calculateTotalTax(List<Products> productList) {
+    static double calculateTotalTax(List<Products> productList) {
         double totalTax = 0;
 
         for (Products product : productList) {
@@ -26,7 +26,7 @@ public class ReceiptGenerator {
         return totalTax;
     }
 
-    private static double calculateTotalPriceWithTax(List<Products> productList, double totalTax) {
+    static double calculateTotalPriceWithTax(List<Products> productList, double totalTax) {
         double totalPriceWithTax = 0;
 
         for (Products product : productList) {
@@ -37,7 +37,7 @@ public class ReceiptGenerator {
         return totalPriceWithTax + totalTax;
     }
 
-    private static double roundTaxAmount(double taxAmount) {
+    public static double roundTaxAmount(double taxAmount) {
         BigDecimal roundedAmount = new BigDecimal(taxAmount).setScale(2, RoundingMode.UP);
         double roundedTaxAmount = roundedAmount.doubleValue();
 
