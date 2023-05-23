@@ -1,4 +1,4 @@
-package Test;
+package Billing;
 
 import Billing.Products;
 import Billing.TaxCalculation;
@@ -18,8 +18,8 @@ public class TaxCalculationTest {
 
         double totalTaxAmount = taxCalculation.calculateTaxAmount(productsList);
 
-        System.out.println("Tax amount :"+ totalTaxAmount, "€");
-        System.out.println("Total:" + calculateTotalAmount(productsList, totalTaxAmount), "€");
+//        System.out.println("Tax amount :"+ totalTaxAmount, "€");
+//        System.out.println("Total:" + calculateTotalAmount(productsList, totalTaxAmount), "€");
     }
 
     private static double calculateTotalAmount(List<Products> productsList, double totalTaxAmount) {

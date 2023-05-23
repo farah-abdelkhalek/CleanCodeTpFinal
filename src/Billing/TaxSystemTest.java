@@ -1,4 +1,4 @@
-package Test;
+package Billing;
 
 import Billing.Products;
 import Billing.TaxSystem;

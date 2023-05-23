@@ -26,11 +26,11 @@ public class Products {
         return category;
     }
 
-    public boolean isImported() {
+    public boolean getIsImported() {
         return importStatus;
     }
 
-    public double getTaxAmount() { return getTaxAmount();}
+//    public double getTaxAmount() { return getTaxAmount();}
     //à rajouter autre part
 }
 

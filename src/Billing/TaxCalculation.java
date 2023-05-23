@@ -35,7 +35,7 @@ public class TaxCalculation {
      }
 
      private TaxSystem getTaxSystem(Products product) {
-         if (product.isImported()) {
+         if (product.getIsImported()) {
              return TaxSystem.IMPORTED_TAX;
          } else {
              return TaxSystem.TAX;

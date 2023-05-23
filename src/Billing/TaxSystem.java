@@ -13,7 +13,7 @@ public enum TaxSystem {
     },
     IMPORTED_TAX {
         public double calculateTax(Products product) {
-            if (product.isImported()) {
+            if (product.getIsImported()) {
                 return product.getPrice() * 0.15;
             } else {
                 return 0;
@@ -22,7 +22,7 @@ public enum TaxSystem {
     },
     IMPORTED_NO_TAX {
         public double calculateTax(Products product) {
-            if (product.isImported()) {
+            if (product.getIsImported()) {
                 return product.getPrice() * 0.05;
             } else {
                 return 0;
