@@ -50,17 +50,17 @@ public class ReceiptDisplayerTest {
 
     private Receipt createSampleReceipt() {
         List<Products> productList = new ArrayList<>();
-        productList.add(new Products("Product 1", 5.0, false, "Category 1"));
-        productList.add(new Products("Product 2", 5.0, false, "Category 2"));
-        double totalTax = 5.0;
-        double totalPriceWithTax = 15.0;
+        productList.add(new Products("Perfume", 27.99, true, "Cosmetic"));
+        productList.add(new Products("PillsAgainstMigraines", 9.75, false, "Medecine"));
+        double totalTax = 4.20;
+        double totalPriceWithTax = 42.0;
         return new Receipt(productList, totalTax, totalPriceWithTax);
     }
 
     private Map<Products, Integer> createSampleProductCountMap() {
         Map<Products, Integer> productCountMap = new HashMap<>();
-        productCountMap.put(new Products("Product 1", 5.0, false, "Category 1"), 2);
-        productCountMap.put(new Products("Product 2", 5.0, false, "Category 2"), 1);
+        productCountMap.put(new Products("Perfume", 18.99, false, "Cosmetic"), 2);
+        productCountMap.put(new Products("PillsAgainstMigraines", 9.75, false, "Medecine"), 1);
         return productCountMap;
     }
 

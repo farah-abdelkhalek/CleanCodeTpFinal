@@ -12,11 +12,11 @@ public class TaxCalculationTest {
     @Test
     public void testCalculateTaxAmount() {
         List<Products> products = new ArrayList<>();
-        products.add(new Products("Product 1", 10.0, false, "Category 1"));
-        products.add(new Products("Product 2", 20.0, true, "Category 2"));
-        products.add(new Products("Product 3", 30.0, false, "Category 3"));
+        products.add(new Products("Perfume", 18.99, false, "Cosmetic"));
+        products.add(new Products("Chocolate", 11.25, true, "Food"));
+        products.add(new Products("PillsAgainstMigraines", 9.75, false, "Medecine"));
 
-        double expectedTaxAmount = 7.0;
+        double expectedTaxAmount = 2.50;
 
         TaxCalculation taxCalculation = new TaxCalculation();
         double calculatedTaxAmount = taxCalculation.calculateTaxAmount(products);
@@ -26,8 +26,8 @@ public class TaxCalculationTest {
 
     @Test
     public void testGetTaxAmount() {
-        Products product = new Products("Product", 10.0, true, "Category");
-        double expectedTaxAmount = 1.5;
+        Products product = new Products("LordOfTheFlies", 12.87, true, "Book");
+        double expectedTaxAmount = 0.70;
 
         TaxCalculation taxCalculation = new TaxCalculation();
         double calculatedTaxAmount = taxCalculation.getTaxAmount(product);

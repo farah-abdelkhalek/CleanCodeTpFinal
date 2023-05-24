@@ -21,12 +21,12 @@ public class ReceiptTest {
     @Before
     public void setup() {
         productsList = new ArrayList<>();
-        productsList.add(new Products("Product 1", 10.0, false, "Category 1"));
-        productsList.add(new Products("Product 2", 20.0, true, "Category 2"));
-        productsList.add(new Products("Product 3", 30.0, false, "Category 3"));
+        productsList.add(new Products("Perfume", 18.99, false, "Cosmetic"));
+        productsList.add(new Products("Chocolate", 11.25, true, "Food"));
+        productsList.add(new Products("PillsAgainstMigraines", 9.75, false, "Medecine"));
 
-        totalTax = 15.0;
-        totalPriceWithTax = 75.0;
+        totalTax = 2.50;
+        totalPriceWithTax = 42.50;
 
         receipt = new Receipt(productsList, totalTax, totalPriceWithTax);
     }

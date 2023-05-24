@@ -15,7 +15,7 @@ public class ProductsTest {
 
     @Test
     public void getPrice() {
-        Products Perfume = new Products("Perfume", 27.99, true, "Cosmetic");
+        Products Perfume = new Products("Perfume", 27.99, false, "Cosmetic");
         Assert.assertEquals(27.99, Perfume.getPrice(), 0.01);
     }
 
