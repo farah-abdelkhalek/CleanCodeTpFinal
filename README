@@ -2,7 +2,7 @@ TP Final - Clean Code
 
 1. Répartition du travail
 
-Farah : création des classes FinalTest, Products, TaxCalculation et TaxSystem ;
+Farah : création des classes FinalTest, Products, TaxCalculation, TaxSystem et les tests ;
 
 Kathleen : création des classes Receipt, ReceiptGenerator et ReceiptDisplayer ;
 
@@ -26,3 +26,12 @@ Ensemble : vérification du projet, de son fonctionnement, cohérence du code.
 
 
     d. Design Pattern
+- Builder Pattern pour la classe 'Products' pour la création d'objets étape par étape,
+- Strategy Pattern pour la classe 'TaxSystem' en pour calculer les taxes pour chaque produit avec le système de tax qui
+  lui correspond, en fonction de la catégorie et du statut d'import.
+
+3. Perspectives d'amélioration :
+
+- Il reste encore des boucles 'for' et 'while' dans le code, l'idéal aurait été de faire sans,
+- Il aurait fallu créer une interface pour que le 'getTaxAmount' fonctionne correctement, puisqu'actuellement, le code affiche
+  les taxes mais ne les ajoutent pas...
