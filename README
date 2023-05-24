@@ -23,7 +23,10 @@ Ensemble : vérification du projet, de son fonctionnement, cohérence du code.
    présentes dans le code (qui ne devraient pas y être),
 
     c. TDD
-
+- La méthode a permis de passer des tests unitaires fréquemment afin d'éviter un grand nombre d'anomalies après
+  l'écriture de plusieurs lignes de code,
+- Pour chaque fonctionnalité, nous avons codé quelques lignes puis avons écrit un test, qui échouait, ce qui permettait
+  de le corriger petit à petit et de développer sans trop d'anomalies.
 
     d. Design Pattern
 - Builder Pattern pour la classe 'Products' pour la création d'objets étape par étape,
@@ -33,5 +36,5 @@ Ensemble : vérification du projet, de son fonctionnement, cohérence du code.
 3. Perspectives d'amélioration :
 
 - Il reste encore des boucles 'for' et 'while' dans le code, l'idéal aurait été de faire sans,
-- Il aurait fallu créer une interface pour que le 'getTaxAmount' fonctionne correctement, puisqu'actuellement, le code affiche
-  les taxes mais ne les ajoutent pas...
+- Il aurait fallu créer une interface pour que le 'getTaxAmount' fonctionne correctement, puisqu'actuellement, le code
+  affiche les taxes mais ne les ajoutent pas...
